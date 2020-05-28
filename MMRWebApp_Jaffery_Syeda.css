@@ -1,0 +1,73 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+/* code for elemnets with class center */
+.center {
+    margin: 	auto;
+    display: 	table;
+    font-family: monospace;
+    
+}
+
+/* Foramts the input elements */
+input[type=number] {
+    border: 2px solid darkred;
+    text-align: right;
+    font: 1.5em monospace;
+    width: 	200px;
+    height: 25px;
+}
+
+/* Foramts the buttons */
+button{
+    font-size: 1.2em;
+    background-color: lightgrey;
+    margin: 2px;
+}
+
+/* Foramts the clear and default
+buttons with id clear and def */
+#clear, #def{
+    width: 100px;
+}
+
+/* Foramts the make me rich! button */
+#rich{
+    width:200px;
+}
+
+/* Foramts the left column in summary table
+all left columns have class lcol */
+.lcol{
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* Foramts the right column in summary table
+all right columns have class rcol */
+.rcol{
+    text-align: left;
+    padding-left: 5px;
+}
+
+/* Foramts the summary table */
+#summary{
+    font-size: 1.5em;
+}
+
+/* Foramts the detail table */
+#detail {
+    width: 400px;
+    border: 1px solid black;
+    background-color: cornsilk;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+/* Foramts the headings, rows and columns for detail table */
+#detail tr, #detail td, #detail th {
+    padding-left: 		7px;
+}

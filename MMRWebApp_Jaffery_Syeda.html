@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Retirement Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./MMRWebApp_Jaffery_Syeda.css"></style>
+</head>
+<body onload="initialize()">
+    <!-- Heading1 -->
+    <h1>Retirement Calculator</h1>
+    
+    <!-- Input form as table -->
+    <form id="inputFormId">
+        <table id="input" class="center">
+            <tr>
+                <td><input id="startAge" type="number"
+                    value="25" min="25" max="99" step="1"
+                    placeholder="Starting Age" required> </td>
+                <td><input id="retireAge" type="number"
+                    value="65" min="65" max="99" step="1"
+                    placeholder="Retirement Age" required></td>
+            </tr>
+            
+            <tr>
+                <td><input id="startSal" type="number"
+                    value="50000" min="50000" step="10000"
+                    placeholder="Starting Salary" required></td>
+                <td><input id="annualSav" type="number"
+                    value="10" min="10" step="1"
+                    placeholder="Annual Savings%" required></td>
+            </tr>
+            <tr>
+                <td><input id="annualRaise" type="number"
+                    value="2" min="2" step="1"
+                    placeholder="Annual Raise%" required></td>
+                <td><input id="intRate" type="number"
+                    value="7" min="7" step="1"
+                    placeholder="Interst Rate%" required></td>
+            </tr>
+        </table>
+        
+        <!-- buttons under the table -->
+        <!-- onclick calls the associated functions from js file when butten id clicked -->
+        <div id="button" class="center">
+                <button type="button" id="clear"    onclick="clearInput(this.form)">Clear</button>
+                <button type="button" id="def"      onclick="loadDefault(this.form)">Defaults</button>
+                <button type="button" id="rich"     onclick="calculate(this.form)">Make Me Rich!</button>
+        </div>
+    </form>
+
+    <!-- Summary table with hardcoded values -->
+    
+    <table id="summary" class="center">
+        <tr>
+            <td id = "yrsInv" class=lcol>999,999</td>
+            <td class=rcol>Years to invest</td>
+        </tr>
+        <tr>
+            <td id = "rfund" class=lcol>999,999</td>
+            <td class=rcol>Retirement Fund</td>
+        </tr>
+        <tr>
+            <td id = "lSalary" class=lcol>999,999</td>
+            <td class=rcol>Lifetime Salary</td>
+        </tr>
+        <tr>
+            <td id = "tSaved" class=lcol>999,999</td>
+            <td class=rcol>Total Saved</td>
+        </tr>
+        <tr>
+            <td id = "earnInt" class=lcol>999,999</td>
+            <td class=rcol>Earned Interest</td>
+        </tr>
+    </table>
+
+
+    <!-- Details table -->
+    <table id="detail" class="center">
+        <tr>
+            <!-- Table headings -->
+            <th>Age</th>
+            <th>Salary</th>
+            <th>Savings</th>
+            <th>Interest</th>
+            <th>Retirement</th>
+        </tr>
+    </table>
+    <script type="text/Javascript" src="./MMRWebApp_Jaffery_Syeda.js"></script>
+    <script type="text/Javascript" src="./FormattingToolsLibrary.js"></script>
+</body>
+</html>
